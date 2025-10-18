@@ -294,5 +294,6 @@ async def on_command_error(ctx, error):
 # JALANKAN BOT
 # ================================================
 if __name__ == '__main__':
-    TOKEN = 'MTQyODc2MDI3Njk4MjgyNTExMg.GBWoTR.Q_5p3pGEuMk2Zvjt9lOUOLFGj1LjZLcJcVXMY4'  # ⚠️ GANTI DENGAN TOKEN BOT ANDA!
+    TOKEN = os.getenv("DISCORD_BOT_TOKEN")
     bot.run(TOKEN)
+
